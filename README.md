@@ -1,1 +1,1 @@
-关于ACM竞赛的一些代码和资料
+some code and materials of ACM
