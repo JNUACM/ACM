@@ -92,8 +92,11 @@ int fun(int s, int t, string str)
 }
 int main()
 {
-  while(scanf("%d%d",&n,&m) && n && m)
+  //freopen("i.txt","r",stdin);
+  //freopen("out.txt","w",stdout);
+  while(~scanf("%d%d",&n,&m))
   {
+    if(n == 0 && m == 0) continue;
     tot = 0;
     memset(h,-1,sizeof(h));
     memset(in,0,sizeof(in));
