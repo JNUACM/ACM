@@ -5,8 +5,8 @@
 
 using namespace std;
 
-const int maxn = 1000 + 10;
-const int maxm = 1e5 + 10;
+const int maxn = 100 + 10;
+const int maxm = 1e4 + 10;
 const int INF = 0x3f3f3f3f;
 
 int n,m;
@@ -81,7 +81,7 @@ int main()
      }
    sort(es,es+m,cmp);
    int res = 0, cnt = 0;
-   for(int i = 0; i < m; i++)
+   for(int i = 0; i <= m; i++)
     {
        if(!same(es[i].u,es[i].v))
          {
@@ -96,7 +96,7 @@ int main()
          memset(vis,false,sizeof(vis));
          dfs(i,i,0);     
       } 
-   //cout << res << endl;
+  // cout << res << endl;
    int ans = INF;
    for(int i = 0; i < m; i++)
          {
